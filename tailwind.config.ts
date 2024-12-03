@@ -12,6 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sourceCode: ["Source Code Pro", "Roboto", "sans-serif"],
+        ubuntu: ["Ubuntu", "Roboto", "sans-serif"],
+        jura: ["Jura", "Ubuntu", "Source Code Pro", "Roboto", "sans-serif"],
+      },
+      backgroundImage: {
+        'starry-sky': "url('/images/starry-sky-bg.jpg')",
+      }
     },
   },
   plugins: [],

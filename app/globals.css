@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #000000;
   --foreground: #171717;
 }
 
@@ -16,6 +18,22 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background: url('/images/starry-sky-bg.jpg') no-repeat 50% 50%; */
+  background-color: #000000;
+  background-size: cover;
+  font-family: "Jura", "Ubuntu";
+  /* z-index: 0; */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/landing-bg.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5; 
+  z-index: -1;
 }

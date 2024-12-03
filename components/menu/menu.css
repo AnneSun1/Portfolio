@@ -1,0 +1,14 @@
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background: #FBFD90;
+    display: flex;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    align-items: center;
+    justify-content: space-between;
+}
+
