@@ -43,7 +43,7 @@ export function Menu (){
     }, [isMenuOpen])
 
     return (
-        <div className="text-xl text-black " ref={container}>
+        <div className=" text-xl text-black " ref={container}>
                 <div className="mt-10 mx-10 p-2 cursor-pointer text-white" onClick={toggleMenu}>
                     &#8801; Menu
                 </div>
@@ -62,7 +62,7 @@ export function Menu (){
                         <Link href="mailto:anne12080901@gmail.com" className="hover:underline hover:underline-offset-4">anne12080901@gmail.com &#8599;</Link>
                         
                     </div>
-                    <div className="flex content-end flex-col text-right mx-10 text-6xl font-bold">
+                    <div className="nav-links flex content-end flex-col text-right mx-10 text-6xl font-bold">
                     <div className="hover:scale-110"><Link href="/" onClick={toggleMenu}>HOME</Link></div>
                         <div className="hover:scale-110"><Link href="/about" onClick={toggleMenu}>ABOUT</Link></div>
                         <div className="hover:scale-110"><Link href="/projects" onClick={toggleMenu}>PROJECTS</Link></div>

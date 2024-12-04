@@ -1,7 +1,8 @@
-
+import { Menu } from "@/components/menu/menu"
 export default function About() {
     return (
         <>
+    
         <div className='text-white flex justify-self-center self-center text-7xl pt-40 pb-24 px-24'>About Me</div>
         <div className="text-white text-center content-center m-10 p-10 text-lg">
             My name is Anne Sun 👋🏻 and I'm a second year Computer Science student at the University of Waterloo!

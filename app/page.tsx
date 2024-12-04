@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { NavBar } from '../components/navbar';
 import { Border } from '../components/border';
+import { Menu } from '@/components/menu/menu';
 
 export default function Home() {
   return (
