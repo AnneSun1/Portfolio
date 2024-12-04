@@ -43,11 +43,11 @@ export function Menu (){
     }, [isMenuOpen])
 
     return (
-        <div className="text-xl bg-transparent text-black" ref={container}>
-                <div className="bg-transparent mt-10 mx-10 p-2 cursor-pointer text-white" onClick={toggleMenu}>
+        <div className="text-xl text-black " ref={container}>
+                <div className="mt-10 mx-10 p-2 cursor-pointer text-white" onClick={toggleMenu}>
                     &#8801; Menu
                 </div>
-                <div className="nav-overlay">
+                <div className="nav-overlay ">
                     <div className="cursor-pointer flex flex-col justify-between" onClick={toggleMenu}>
                         <div className="mt-10 mx-10 p-2 self-start">&#x2715; Close</div>
                         <div className="m-10 cursor-pointer self-end text-bottom text-8xl">&#x2715;</div>

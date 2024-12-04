@@ -3,9 +3,8 @@ import Image from "next/image"
 
 export default function Projects() {
     return (
-        <>
-        <div className="content-center text-white font-ubuntu m-10 p-10">
-            <h1 className="text-center text-xl">Projects</h1>
+        <div className="content-center text-white m-10 p-10">
+            <div className='text-white flex justify-self-center self-center text-7xl pt-40 pb-24 px-24'>Welcome</div>
             <ul>
                 <li className="flex-1 flex-vertical">
                     Estia: <EstiaDemo/>
@@ -18,6 +17,5 @@ export default function Projects() {
             </ul>
 
         </div>
-        </>
     )
 }

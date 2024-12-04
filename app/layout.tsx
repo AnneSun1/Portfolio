@@ -31,9 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Menu/>
-        <div className="flex flex-1 flex-col justify-center items-center">
+        {/* <div className="flex flex-1 flex-col justify-center items-center"> */}
           {children}
-        </div>
+        {/* </div> */}
       </body>
       
     </html>
