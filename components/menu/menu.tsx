@@ -43,7 +43,7 @@ export function Menu (){
     }, [isMenuOpen])
 
     return (
-        <div className=" text-xl text-black " ref={container}>
+        <div className="z-[1] absolute text-xl text-black " ref={container}>
                 <div className="mt-10 mx-10 p-2 cursor-pointer text-white" onClick={toggleMenu}>
                     &#8801; Menu
                 </div>

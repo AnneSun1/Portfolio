@@ -19,7 +19,11 @@ export default {
       },
       backgroundImage: {
         'starry-sky': "url('/images/starry-sky-bg.jpg')",
-        'landing-bg': "url('/images/landing-bg.jpg')"
+        'landing-bg': "url('/images/landing-bg.jpg')",
+        
+      },
+      backgroundColor: {
+        'yellow': '#FBFD90',
       }
     },
   },
