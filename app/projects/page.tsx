@@ -27,15 +27,15 @@ export default function Projects() {
 
     useGSAP(() => {
 
-        // ScrollTrigger.create({
-        //     trigger: ".projects",
-        //     snap: {
-        //         snapTo: 1/4, // Snap to the closest half page
-        //         duration: 0.75, // Animation duration for the snap
-        //         ease: "power4.in", // Easing for the snap
-        //     },
-        //     scrub: true
-        // });
+        ScrollTrigger.create({
+            trigger: ".projects",
+            snap: {
+                snapTo: 1/4, // Snap to the closest half page
+                duration: 1.5, // Animation duration for the snap
+                ease: "power4.in", // Easing for the snap
+            },
+            scrub: true
+        });
 
         gsap.set('.estia-info', {scale:0, opacity: 0})
         gsap.to('.estia-title', {
