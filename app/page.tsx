@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import "./background.css";
-import { Loader } from '@/components/landing-page/loader';
-
 export default function Home() {
   return (
     <div className='h-screen w-screen flex items-center text-center justify-center bg'>

@@ -1,5 +1,4 @@
 "use client"
-import { Menu } from "@/components/menu/menu"
 import "../background.css"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -9,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
     const container = useRef(null);
-    const tl = useRef<any| null>(null);
+    // const tl = useRef<any| null>(null);
     
 
     useGSAP(() => {
@@ -23,6 +22,7 @@ export default function About() {
             scrub: true
           });
     }, {scope: container})
+
     return (
         <div ref={container}>
         <div className='h-screen w-screen bg flex flex-col items-center text-center justify-center'>

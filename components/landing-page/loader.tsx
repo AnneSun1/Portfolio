@@ -90,16 +90,6 @@ export function Loader() {
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
-
-            {/* <div className="header flex-1">
-                <div className="h1">W</div>
-                <div className="h1">e</div>
-                <div className="h1">l</div>
-                <div className="h1">c</div>
-                <div className="h1">o</div>
-                <div className="h1">m</div>
-                <div className="h1">e</div>
-            </div> */}
             
             <div className="counter flex-1 self-end m-10 text-8xl">0%</div>
 

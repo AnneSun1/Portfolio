@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import "./menu.css";
-import { NavBar } from "../navbar";
 import { gsap } from "gsap";
 import {useGSAP} from "@gsap/react";
 
@@ -66,7 +65,6 @@ export function Menu (){
                     <div className="hover:scale-110"><Link href="/" onClick={toggleMenu}>HOME</Link></div>
                         <div className="hover:scale-110"><Link href="/about" onClick={toggleMenu}>ABOUT</Link></div>
                         <div className="hover:scale-110"><Link href="/projects" onClick={toggleMenu}>PROJECTS</Link></div>
-                        {/* <div className="hover:scale-110"><Link href="/" onClick={toggleMenu}>MY CAT</Link></div> */}
                     </div>
                 </div>
         </div>
