@@ -16,20 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: "Pixel";
+  src: url('/fonts/pixel-font.ttf');
+}
 body {
   color: black;
   background-color: #f7eddf;
   background-size: cover;
-  font-family: "Jura", "Ubuntu";
-  
+  font-family: "Pixel", "Jura", "Ubuntu";
 }
-
-/* body::before { */
-  /* content: '';
-  position: absolute;
-
-  background: url('/images/landing-bg.jpg') no-repeat center center; 
-  background-size: cover;
-  opacity: 0.5; 
-  z-index: -1;
-} */

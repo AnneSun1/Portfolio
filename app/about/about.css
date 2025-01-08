@@ -1,0 +1,81 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+
+}
+
+
+.portrait-container {
+    margin: 3rem;
+    border: solid;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem black;
+    background-color: #D5DDE8;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.portrait-container img{
+    border: solid;
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.cat {
+    height: 200px;
+    position: relative;
+    bottom: 10rem;
+    right: 12rem;
+    border: solid;
+    border-radius: 2rem;
+
+}
+
+.description-container p{
+    padding: 0.25rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-radius: 2rem;
+    box-shadow: 0.75rem 0.75rem black;
+    background-color: #FDCDB7;
+    margin-top: 3rem;
+}
+
+.icon-container button {
+    border: solid;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+.icon-container button:hover{
+    box-shadow: inset 0.25rem 0.25rem 0.25rem 0 black;
+}
+
+.icon {
+    border: solid;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0.25rem 0.25rem black;
+    margin: 1rem;
+    background-color: white;
+}
+
+.icon:hover {
+    box-shadow: inset 0.25rem 0.25rem 0.25rem 0 black;
+}

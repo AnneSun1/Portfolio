@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import './styles.css'
+import './projects.css'
 import LooksOneIcon from '@mui/icons-material/LooksOne';
 import LooksTwoIcon from '@mui/icons-material/LooksTwo';
 import Looks3Icon from '@mui/icons-material/Looks3';
@@ -17,8 +17,6 @@ import { NavBar } from "@/components/navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
-
-import "./styles.css"
 
 export default function Projects() {
     const container = useRef(null);
@@ -32,10 +30,10 @@ export default function Projects() {
     }
 
     return (
-        <div className="projects text-black h-screen w-screen">
+        <div className="text-black h-screen w-screen">
             <NavBar/>
             <div className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center" ref={container}>
-            <div className='text-black flex justify-self-center self-center text-xxl'>Projects</div>
+            <div className='text-black flex justify-self-center self-center text-6xl mb-5'>Projects</div>
                 <div className="number-container">
                     <div className="number-icon" onClick={() => moveTo("project1")}><LooksOneIcon fontSize="large"/></div>
                     <div className="number-icon" onClick={() => moveTo("project2")}><LooksTwoIcon fontSize="large"/></div>
@@ -51,7 +49,7 @@ export default function Projects() {
                 summary="Find how to categorize your waste:"
                 description=""
                 link="https://github.com/AnneSun1/wastely"
-                image=""/>
+                image="images/wastely.png"/>
             </div>
 
             <div id="project2" className="h-screen w-screen bg-[#D5DDE8] flex flex-col justify-center items-center">
@@ -59,8 +57,8 @@ export default function Projects() {
                     title="Estia"
                     summary="Find how to categorize your waste:"
                     description=""
-                    link="https://github.com/AnneSun1/wastely"
-                    image=""/>
+                    link="https://github.com/estiaofficial/estia"
+                    image="images/wastely.png"/>
             </div>
 
             <div id="project3" className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center">
@@ -68,24 +66,24 @@ export default function Projects() {
                     title="Take Me Out!"
                     summary="Find how to categorize your waste:"
                     description=""
-                    link="https://github.com/AnneSun1/wastely"
-                    image=""/>
+                    link="https://github.com/AnneSun1/Take-Me-Out-Game"
+                    image="images/wastely.png"/>
             </div>
             <div id="project4" className="h-screen w-screen bg-white flex flex-col justify-center items-center">
                 <Card 
                     title="Yelp Camp"
                     summary="Find how to categorize your waste:"
                     description=""
-                    link="https://github.com/AnneSun1/wastely"
-                    image=""/>
+                    link="https://github.com/AnneSun1/YelpCamp-MERN"
+                    image="images/wastely.png"/>
             </div>
             <div id="project5" className="h-screen w-screen bg-[#D5DDE8] flex flex-col justify-center items-center">
                 <Card 
                     title="Fina"
                     summary="Find how to categorize your waste:"
                     description=""
-                    link="https://github.com/AnneSun1/wastely"
-                    image=""/>
+                    link="https://github.com/AnneSun1/Fina"
+                    image="images/wastely.png"/>
             </div>
             
         </div>

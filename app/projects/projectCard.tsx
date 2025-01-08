@@ -1,4 +1,4 @@
-import './styles.css';
+import './projects.css';
 
 interface ProjectCardParams {
     title: string;
@@ -13,7 +13,7 @@ const projectCard = ({title, summary, description, link, image} : ProjectCardPar
             <h1 className="mb-2">{title}</h1>
             <h1 className="mb-5">{summary}</h1>
             <a href={link} target="_blank">
-                <div className="description-container">
+                <div className="project-description-container">
                     <img src={image}></img>
                 </div>  
             </a>
