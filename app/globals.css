@@ -20,9 +20,15 @@
   font-family: "Pixel";
   src: url('/fonts/pixel-font.ttf');
 }
+
+@font-face {
+  font-family: "PixelCode Thin";
+  src: url('/fonts/PixelCode-thin.ttf');
+}
+
 body {
   color: black;
   background-color: #f7eddf;
   background-size: cover;
-  font-family: "Pixel", "Jura", "Ubuntu";
+  font-family: "Pixel", "PixelCode Thin", "Jura", "Ubuntu";
 }

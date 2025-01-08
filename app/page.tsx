@@ -47,7 +47,7 @@ export default function Home() {
         <div className='text-7xl flex flex-row' ref={textRef}>
           
         </div>
-        <div className='text-7xl' ref={cursorRef}>_</div>
+        <div className='text-7xl' ref={cursorRef}></div>
         {/* <div className='text-4xl'>
           Welcome to my webpage ♡
         </div> */}
