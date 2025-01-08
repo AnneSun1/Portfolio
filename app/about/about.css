@@ -37,11 +37,21 @@
     right: 12rem;
     border: solid;
     border-radius: 2rem;
-
 }
 
+.description-container {
+    margin-top: 2rem;
+    height: 300px;
+    width: 400px;
+    border: solid;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem black;
+    padding: 1rem;
+    font-family: "Ubuntu";
+}
 .description-container p{
     padding: 0.25rem;
+    /* font-weight: 500; */
 }
 
 .icon-container {
