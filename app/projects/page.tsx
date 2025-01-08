@@ -7,11 +7,6 @@ import { useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import './projects.css'
-import LooksOneIcon from '@mui/icons-material/LooksOne';
-import LooksTwoIcon from '@mui/icons-material/LooksTwo';
-import Looks3Icon from '@mui/icons-material/Looks3';
-import Looks4Icon from '@mui/icons-material/Looks4';
-import Looks5Icon from '@mui/icons-material/Looks5';
 import Card from "./projectCard";
 import { NavBar } from "@/components/navbar";
 
@@ -35,11 +30,27 @@ export default function Projects() {
             <div className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center" ref={container}>
             <div className='text-black flex justify-self-center self-center text-6xl mb-5'>Projects</div>
                 <div className="number-container">
-                    <div className="number-icon" onClick={() => moveTo("project1")}><LooksOneIcon fontSize="large"/></div>
-                    <div className="number-icon" onClick={() => moveTo("project2")}><LooksTwoIcon fontSize="large"/></div>
-                    <div className="number-icon" onClick={() => moveTo("project3")}><Looks3Icon fontSize="large"/></div>
-                    <div className="number-icon" onClick={() => moveTo("project4")}><Looks4Icon fontSize="large"/></div>
-                    <div className="number-icon" onClick={() => moveTo("project5")}><Looks5Icon fontSize="large"/></div>
+                    <div className="number-icon" onClick={() => moveTo("project1")}>
+                        {/* <LooksOneIcon fontSize="large"/> */}
+                        <img src="/icons/one_32.svg"/>
+                    </div>
+                    <div className="number-icon" onClick={() => moveTo("project2")}>
+                        {/* <LooksTwoIcon fontSize="large"/> */}
+                        <img src="/icons/two_32.svg"/>
+                    </div>
+                    <div className="number-icon" onClick={() => moveTo("project3")}>
+                        {/* <Looks3Icon fontSize="large"/> */}
+                        <img src="/icons/three_32.svg"/>
+                    </div>
+                    <div className="number-icon" onClick={() => moveTo("project4")}>
+                        {/* <Looks4Icon fontSize="large"/> */}
+                    <img src="/icons/four_32.svg"/>
+                    </div>
+                    <div className="number-icon" onClick={() => moveTo("project5")}>
+                        {/* <Looks5Icon fontSize="large"/> */}
+                        <img src="/icons/five_32.svg"/>
+                    </div>
+                    
                 </div>
             </div>
 

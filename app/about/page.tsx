@@ -2,8 +2,6 @@
 import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
 import { useEffect, useRef } from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { NavBar } from "@/components/navbar";
 import "./about.css"
 
@@ -41,8 +39,8 @@ export default function About() {
                 </div>
                 
                 <div className="icon-container">
-                    <div className="icon"><a href="https://github.com/AnneSun1" target="_blank"><GitHubIcon fontSize="large"/></a></div>
-                    <div className="icon"><a href="https://www.linkedin.com/in/sunanne/" target="_blank"><LinkedInIcon fontSize="large"/></a></div>
+                    <div className="icon"><a href="https://github.com/AnneSun1" target="_blank"><img src="/icons/github.svg"/></a></div>
+                    <div className="icon"><a href="https://www.linkedin.com/in/sunanne/" target="_blank"><img src="/icons/linkedin.svg"/></a></div>
                     <button>Resume</button>
                 </div>
 
