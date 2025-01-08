@@ -5,54 +5,87 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import "../background.css"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import './styles.css'
+import LooksOneIcon from '@mui/icons-material/LooksOne';
+import LooksTwoIcon from '@mui/icons-material/LooksTwo';
+import Looks3Icon from '@mui/icons-material/Looks3';
+import Looks4Icon from '@mui/icons-material/Looks4';
+import Looks5Icon from '@mui/icons-material/Looks5';
+import Card from "./projectCard";
+import { NavBar } from "@/components/navbar";
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 import "./styles.css"
 
 export default function Projects() {
     const container = useRef(null);
-    const estia = useRef<any| null>(null);
 
-    // const titles = document.querySelectorAll('title');
-
-    // titles.forEach(( title ) => {
-    //     let tl = gsap.timeline({ paused: true });
-    //     tl.to('h1', {text: title.dataset.title, duration: 1}, 0.5)
-    // })
-
-
-
-    useGSAP(() => {
-        ScrollTrigger.create ({
-            
-        })
-    }, {scope: container})
-
-
+    const moveTo = (id: string) =>{
+        gsap.to(window, {
+           duration: 1,
+           scrollTo: `#${id}`,
+           ease: "power2"
+        });
+    }
 
     return (
-        <div className="projects" ref={container}>
-
-            <div className='h-screen w-screen bg flex flex-col items-center text-center justify-center'>
-                <div className='text-white flex justify-self-center self-center text-7xl pt-40 pb-40 px-24'>Projects</div>
-                <div className="scroll-down mt-20">Scroll Down</div>
-                <div className="">&#8964;</div>
+        <div className="projects text-black h-screen w-screen">
+            <NavBar/>
+            <div className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center" ref={container}>
+            <div className='text-black flex justify-self-center self-center text-xxl'>Projects</div>
+                <div className="number-container">
+                    <div className="number-icon" onClick={() => moveTo("project1")}><LooksOneIcon fontSize="large"/></div>
+                    <div className="number-icon" onClick={() => moveTo("project2")}><LooksTwoIcon fontSize="large"/></div>
+                    <div className="number-icon" onClick={() => moveTo("project3")}><Looks3Icon fontSize="large"/></div>
+                    <div className="number-icon" onClick={() => moveTo("project4")}><Looks4Icon fontSize="large"/></div>
+                    <div className="number-icon" onClick={() => moveTo("project5")}><Looks5Icon fontSize="large"/></div>
+                </div>
             </div>
 
-            <div >
-                <div>Wastely</div>
-                <div></div>
-            </div>
-            <div className='estia-container h-screen w-screen bg flex flex-col items-center text-center'>
-                <div className="estia-title justify-self-left text-white m-10 mt-28 text-3xl ">Estia</div>
-                <div className="estia-info"><EstiaDemo/></div>
+            <div id="project1" className="h-screen w-screen bg-white flex flex-col justify-center items-center">
+               <Card 
+                title="Wastely"
+                summary="Find how to categorize your waste:"
+                description=""
+                link="https://github.com/AnneSun1/wastely"
+                image=""/>
             </div>
 
-            <div className='take-me-out-container h-screen w-screen bg flex flex-col items-center text-center'>
-                <div className="take-me-out-title self-center justify-self-center m-10 mt-28 text-xl border">Take Me Out!:</div>
-                <div className="take-me-out-info border"><Image src="/images/take-me-out.png" width={500} height={500} alt="Take me out"/></div>
+            <div id="project2" className="h-screen w-screen bg-[#D5DDE8] flex flex-col justify-center items-center">
+                <Card 
+                    title="Estia"
+                    summary="Find how to categorize your waste:"
+                    description=""
+                    link="https://github.com/AnneSun1/wastely"
+                    image=""/>
+            </div>
+
+            <div id="project3" className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center">
+                <Card 
+                    title="Take Me Out!"
+                    summary="Find how to categorize your waste:"
+                    description=""
+                    link="https://github.com/AnneSun1/wastely"
+                    image=""/>
+            </div>
+            <div id="project4" className="h-screen w-screen bg-white flex flex-col justify-center items-center">
+                <Card 
+                    title="Yelp Camp"
+                    summary="Find how to categorize your waste:"
+                    description=""
+                    link="https://github.com/AnneSun1/wastely"
+                    image=""/>
+            </div>
+            <div id="project5" className="h-screen w-screen bg-[#D5DDE8] flex flex-col justify-center items-center">
+                <Card 
+                    title="Fina"
+                    summary="Find how to categorize your waste:"
+                    description=""
+                    link="https://github.com/AnneSun1/wastely"
+                    image=""/>
             </div>
             
         </div>

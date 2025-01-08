@@ -1,9 +1,10 @@
 "use client"
-import "../background.css"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { NavBar } from "@/components/navbar";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
@@ -25,23 +26,24 @@ export default function About() {
 
     return (
         <div ref={container}>
-        <div className='h-screen w-screen bg flex flex-col items-center text-center justify-center'>
-                <div className='text-white flex justify-self-center self-center text-7xl pt-40 pb-40 px-24'>About Me</div>
-                <div className="scroll-down mt-20">Scroll Down</div>
-                <div className="">&#8964;</div>
-        </div>
+            <NavBar/>
+            <div className='h-screen w-screen bg flex flex-col items-center text-center justify-center'>
+                    <div className='text-black flex justify-self-center self-center text-7xl pt-40 pb-40 px-24'>About Me</div>
+                    <div className="scroll-down mt-20">Scroll Down</div>
+                    <div className="">&#8964;</div>
+            </div>
 
-        <div className="page-1 h-screen w-screen bg flex flex-col items-center text-center justify-center">
-        <div className="text-white text-center content-center m-10 p-10 text-lg">
-            My name is Anne Sun 👋🏻 and I'm a second year Computer Science student at the University of Waterloo!
-            I do full-stack development, game development and machine learning/deep learning.
-            I'm passionate about empowering women and underrepresented genders in STEM 
-            through education and providing equitable oppurtunities in my role as a WiCS executive.
-        </div>
-        <div className="text-white content-start mx-10 px-10">
-            Hobbies: 🧘🏻‍♀️ yoga, 😺 my 5 year old cat, 🧑🏻‍🎨 digital art, 🏊🏻‍♀️ swimming
-        </div>
-        </div>
+            <div className="page-1 h-screen w-screen bg flex flex-col items-center text-center justify-center">
+            <div className="text-black text-center content-center m-10 p-10 text-lg">
+                My name is Anne Sun 👋🏻 and I'm a second year Computer Science student at the University of Waterloo!
+                I do full-stack development, game development and machine learning/deep learning.
+                I'm passionate about empowering women and underrepresented genders in STEM 
+                through education and providing equitable oppurtunities in my role as a WiCS executive.
+            </div>
+            <div className="text-white content-start mx-10 px-10">
+                Hobbies: 🧘🏻‍♀️ yoga, 😺 my 5 year old cat, 🧑🏻‍🎨 digital art, 🏊🏻‍♀️ swimming
+            </div>
+            </div>
         </div>
     )
 }

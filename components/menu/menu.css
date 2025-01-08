@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height:100vh;
-    background: #FBFD90;
+    background: #f7eddf;
     display: flex;
     z-index: 2;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);

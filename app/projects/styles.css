@@ -1,0 +1,44 @@
+.number-container {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: #f7eddf;
+    box-shadow: 1rem 1rem black;
+}
+.number-icon {
+    border: solid;
+    border-color: black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+.number-icon:hover {
+    box-shadow: inset 0.15rem 0.15rem 0.5rem 0 rgb(35, 35, 35);
+}
+
+.project-card {
+    background-color: #f7eddf;
+    border: solid;
+    border-radius: 2rem;
+    padding: 5rem;
+    box-shadow: 1rem 1rem black;
+}
+
+.description-container {
+    background-color: white;
+    border: solid;
+    border-radius: 2rem;
+    height: 300px;
+    width: 300px;
+    box-shadow: 1rem 1rem black;
+}
+
+.description-container:hover {
+    box-shadow: inset 0.15rem 0.15rem 0.5rem 0 rgb(35, 35, 35);
+}

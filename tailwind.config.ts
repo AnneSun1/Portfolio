@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'apricot': 'FDCDB7',
       },
       fontFamily: {
         sourceCode: ["Source Code Pro", "Roboto", "sans-serif"],
@@ -24,6 +25,7 @@ export default {
       },
       backgroundColor: {
         'yellow': '#FBFD90',
+        
       }
     },
   },

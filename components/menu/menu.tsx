@@ -43,7 +43,7 @@ export function Menu (){
 
     return (
         <div className="z-[1] absolute text-xl text-black " ref={container}>
-                <div className="mt-10 mx-10 p-2 cursor-pointer text-white" onClick={toggleMenu}>
+                <div className="mt-10 mx-10 p-2 cursor-pointer text-black" onClick={toggleMenu}>
                     &#8801; Menu
                 </div>
                 <div className="nav-overlay ">

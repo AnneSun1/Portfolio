@@ -17,11 +17,11 @@
 }
 
 body {
-  color: var(--foreground);
-  background-color: #000000;
+  color: black;
+  background-color: #f7eddf;
   background-size: cover;
   font-family: "Jura", "Ubuntu";
-  z-index: 0;
+  
 }
 
 /* body::before { */
