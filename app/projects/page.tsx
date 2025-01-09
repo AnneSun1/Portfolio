@@ -90,8 +90,8 @@ export default function Projects() {
             <div id="project4" className="bg-white flex flex-col justify-center items-center">
                 <Card 
                     number="four"
-                    title="Yelp Camp"
-                    summary="Find the next hot campsite:"
+                    title="Nswer"
+                    summary=""
                     description={yelpCampDescription}
                     link="https://github.com/AnneSun1/YelpCamp-MERN"
                     image="images/coming-soon.png"/>
@@ -100,7 +100,7 @@ export default function Projects() {
                 <Card 
                     number="five"
                     title="Fina"
-                    summary="A financial tracker...:"
+                    summary=""
                     description={finaDescription}
                     link="https://github.com/AnneSun1/Fina"
                     image="images/coming-soon.png"/>
