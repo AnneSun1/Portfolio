@@ -41,10 +41,10 @@ export default function Home() {
   return (
     <div className='h-screen w-screen flex items-center text-center justify-center flex-wrap'>
       <NavBar/>
-      <div><img src='/images/panda.png' style={{ height: '300px', width: '300px'}}></img></div>
+      <div className='absolute top-40 right-20 z-[-1]'><img src='/images/panda.png' className=' h-[150px] md:h-[300px]'></img></div>
       <div className='text-black flex flex-row justify-self-center self-center'>
       
-      <div className='text-7xl flex flex-row' ref={textRef}></div>
+      <div className='md:text-7xl text-3xl flex flex-row' ref={textRef}></div>
         {/* <div className='text-7xl' ref={cursorRef}></div> */}
      </div>
      

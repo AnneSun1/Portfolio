@@ -4,7 +4,10 @@
     flex-wrap: wrap;
     border: solid;
     border-radius: 2rem;
-    padding: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
     background-color: #f7eddf;
     box-shadow: 1rem 1rem black;
 }
@@ -16,15 +19,17 @@
 .number-icon {
     border: solid;
     border-color: black;
-    height:70px;
-    width: 70px;
+    /* height:70px;
+    width: 70px; */
     border-radius: 50%;
     padding: 0.5rem;
     margin: 0.5rem;
+    font-size: xx-large;  
     background-color: white;
     box-shadow: 0.25rem 0.25rem black;
     display: flex;
     justify-content: center;
+    align-items: center ;
 }
 
 .number-icon:hover {
@@ -68,7 +73,12 @@
 @media screen and (max-width: 600px){
     .number-container {
         margin-left: 7rem; 
-        margin-right: 7rem;   
+        margin-right: 7rem;  
+        max-height: 400px;
+    }
+
+    .number-icon {
+        font-size: small;
     }
     .project-card {
         background-color: #f7eddf;

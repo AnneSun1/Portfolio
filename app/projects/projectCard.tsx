@@ -49,11 +49,11 @@ const projectCard = ({number, title, summary, description, link, image} : Projec
                     <img src={image}></img>
                     <a href={link} target="_blank"><div id="circle">♥</div></a>
                 </div>
-                <div className='flex flex-col justify-left'>
+                {/* <div className='flex flex-col justify-left'>
                     {description.map((_, index) => (
                             <p id={`${number}-line-${index}`} key={index}></p> 
                         ))}
-                </div>
+                </div> */}
             </div>
         
     </div>
