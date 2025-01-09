@@ -44,14 +44,16 @@ const projectCard = ({number, title, summary, description, link, image} : Projec
         <div className="project-card" id={`project-${number}`}>
             <h1 className="mb-2">{title}</h1>
             <h2 className="mb-5">{summary}</h2>
-            <div className='flex flex-row justify-center '>
+            <div className='flex flex-column justify-center flex-wrap'>
                <div className="project-container">
                     <img src={image}></img>
                     <a href={link} target="_blank"><div id="circle">♥</div></a>
                 </div>
-                {description.map((_, index) => (
-                        <p id={`${number}-line-${index}`} key={index}></p> 
-                    ))}
+                <div className='flex flex-col justify-left'>
+                    {description.map((_, index) => (
+                            <p id={`${number}-line-${index}`} key={index}></p> 
+                        ))}
+                </div>
             </div>
         
     </div>

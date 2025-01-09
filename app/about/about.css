@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 200px;
 }
 
 .portrait-container img{
@@ -41,6 +41,12 @@
     border-radius: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .description-container {
+        height: 600px;
+        width: 200px;
+    }
+}
 .description-container {
     margin-top: 2rem;
     height: 300px;

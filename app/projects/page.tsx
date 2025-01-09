@@ -44,11 +44,11 @@ export default function Projects() {
         <div className="">
             <NavBar/>
             <div className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center" ref={container}>
-            <div className='text-black flex justify-self-center self-center text-6xl mb-10'>Projects</div>
-            
+                <div className='text-black flex justify-self-center self-center lg:text-6xl text-4xl mb-10 mt-10'>Projects</div>
+                
                 <div className="number-container">
-                    <p>♥ Click below to jump to a project ♥</p>
-                    <div className="flex flex-row justify-center">
+                    <p className="md:text-lg text-sm">♥ Click below to jump to a project ♥</p>
+                    <div className="flex flex-col md:flex-row items-center justify-center ">
                         <div className="number-icon" onClick={() => moveTo("project1")}><img src="/icons/one_32.svg"/></div>
                         <div className="number-icon" onClick={() => moveTo("project2")}><img src="/icons/two_32.svg"/></div>
                         <div className="number-icon" onClick={() => moveTo("project3")}><img src="/icons/three_32.svg"/></div>
