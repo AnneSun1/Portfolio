@@ -58,15 +58,15 @@
     /* max-height: 300px;
     max-width: 400px; */
     height: 400px;
-    min-width: 300px;
+    min-width: 400px;
     max-width: 400px;
     border: solid;
     border-radius: 2rem;
     box-shadow: 1rem 1rem black;
     padding: 1rem;
-    font-family: "PixelCode Thin";
+    font-family: "Source Code Pro";
     background-color: white;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 40px;
 }
 .description-container p{

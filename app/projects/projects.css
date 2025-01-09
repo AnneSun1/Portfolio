@@ -13,7 +13,7 @@
 }
 
 .number-container p {
-    font-family: "PixelCode Thin";
+    font-family: "Source Code Pro";
     padding: 1rem;
 }
 .number-icon {
@@ -47,11 +47,11 @@
 }
 
 .project-card h2 {
-    font-family: "PixelCode Thin";
+    font-family: "Source Code Pro";
 }
 
 .project-card p {
-    font-family: "PixelCode Thin";
+    font-family: "Source Code Pro";
     margin-left: 2rem;
     margin-top: 2rem;
     text-wrap: wrap;
