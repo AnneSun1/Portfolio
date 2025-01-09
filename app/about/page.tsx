@@ -42,7 +42,7 @@ export default function About() {
                 <div className="icon-container">
                     <div className="icon"><a href="https://github.com/AnneSun1" target="_blank"><img src="/icons/github.svg"/></a></div>
                     <div className="icon"><a href="https://www.linkedin.com/in/sunanne/" target="_blank"><img src="/icons/linkedin.svg"/></a></div>
-                    <button>Resume</button>
+                    <button><a href="/Anne_s_Resume.pdf" target="_blank">Resume</a></button>
                 </div>
 
             </div>
