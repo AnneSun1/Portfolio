@@ -1,11 +1,16 @@
 .number-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: solid;
     border-radius: 2rem;
-    padding: 5rem;
+    padding: 3rem;
     background-color: #f7eddf;
     box-shadow: 1rem 1rem black;
+}
+
+.number-container p {
+    font-family: "PixelCode Thin";
+    padding: 1rem;
 }
 .number-icon {
     border: solid;
@@ -28,17 +33,52 @@
     border-radius: 2rem;
     padding: 5rem;
     box-shadow: 1rem 1rem black;
+    margin: 7rem;
+    margin-right: 8.5rem;
+    object-fit: contain;
 }
 
-.project-description-container {
+.project-card h2 {
+    font-family: "PixelCode Thin";
+}
+
+.project-card p {
+    font-family: "PixelCode Thin";
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-wrap: wrap;
+}
+
+.project-container {
     background-color: white;
     border: solid;
     border-radius: 2rem;
     height: 300px;
-    width: 300px;
+    min-width: 300px;
     box-shadow: 1rem 1rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-description-container:hover {
-    box-shadow: inset 0.15rem 0.15rem 0.5rem 0 rgb(35, 35, 35);
+.project-container img {
+    max-width: 250px;
+    border: solid;
+}
+
+#circle {
+    height: 50px;
+    width: 50px;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#circle:hover {
+    box-shadow: inset 0.15rem 0.15rem 0.5rem;
 }

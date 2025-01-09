@@ -14,9 +14,10 @@ export default {
         'apricot': 'FDCDB7',
       },
       fontFamily: {
-        sourceCode: ["Source Code Pro", "Roboto", "sans-serif"],
-        ubuntu: ["Ubuntu", "Roboto", "sans-serif"],
-        jura: ["Jura", "Ubuntu", "Source Code Pro", "Roboto", "sans-serif"],
+        'sourceCode': ["Source Code Pro", "Roboto", "sans-serif"],
+        'ubuntu': ["Ubuntu", "Roboto", "sans-serif"],
+        'jura': ["Jura", "Ubuntu", "Source Code Pro", "Roboto", "sans-serif"],
+        'pixel': ["PixelCode Thin"]
       },
       backgroundImage: {
         'starry-sky': "url('/images/starry-sky-bg.jpg')",

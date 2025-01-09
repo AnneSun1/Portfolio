@@ -1,5 +1,5 @@
 "use client"
-import { NavBar } from '@/components/navbar';
+import { NavBar } from '@/components/navbar/navbar';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { TextPlugin } from "gsap/TextPlugin";
@@ -39,18 +39,13 @@ export default function Home() {
 
   
   return (
-    <div className='h-screen w-screen flex items-center text-center justify-center'>
+    <div className='h-screen w-screen flex items-center text-center justify-center flex-wrap'>
       <NavBar/>
       <div><img src='/images/panda.png' style={{ height: '300px', width: '300px'}}></img></div>
-     <div className='text-black flex flex-row justify-self-center self-center pt-40 pb-24 px-24'>
-        
-        <div className='text-7xl flex flex-row' ref={textRef}>
-          
-        </div>
-        <div className='text-7xl' ref={cursorRef}></div>
-        {/* <div className='text-4xl'>
-          Welcome to my webpage ♡
-        </div> */}
+      <div className='text-black flex flex-row justify-self-center self-center'>
+      
+      <div className='text-7xl flex flex-row' ref={textRef}></div>
+        {/* <div className='text-7xl' ref={cursorRef}></div> */}
      </div>
      
     </div>
