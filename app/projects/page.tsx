@@ -48,7 +48,7 @@ export default function Projects() {
                 
                 <div className="number-container">
                     <p className="md:text-lg text-sm">♥ Click below to jump to a project ♥</p>
-                    <div className="flex flex-col md:flex-row items-center justify-center ">
+                    <div className="flex flex-col sm:flex-row items-center justify-center ">
                         <div className="number-icon" onClick={() => moveTo("project1")}><img src="/icons/one_32.svg"/></div>
                         <div className="number-icon" onClick={() => moveTo("project2")}><img src="/icons/two_32.svg"/></div>
                         <div className="number-icon" onClick={() => moveTo("project3")}><img src="/icons/three_32.svg"/></div>
