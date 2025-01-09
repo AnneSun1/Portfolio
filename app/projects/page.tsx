@@ -47,7 +47,7 @@ export default function Projects() {
                 <div className='text-black flex justify-self-center self-center lg:text-6xl text-4xl pb-10 pt-10'>Projects</div>
                 
                 <div className="number-container">
-                    <p className="md:text-lg text-sm">♥ Click below to jump to a project ♥</p>
+                    {/* <p className="md:text-lg text-xs"></p> */}
                     <div className="flex flex-row sm:flex-row items-center justify-center flex-wrap">
                         <div className="number-icon" onClick={() => moveTo("project1")}>1</div>
                         <div className="number-icon" onClick={() => moveTo("project2")}>2</div>

@@ -55,7 +55,10 @@
 
 .description-container {
     margin-top: 2rem;
-    max-height: 300px;
+    /* max-height: 300px;
+    max-width: 400px; */
+    height: 400px;
+    min-width: 300px;
     max-width: 400px;
     border: solid;
     border-radius: 2rem;
