@@ -43,7 +43,7 @@ export default function Projects() {
     return (
         <div className="">
             <NavBar/>
-            <div className="h-screen w-screen bg-[#FDCDB7] flex flex-col justify-center items-center" ref={container}>
+            <div className="h-full w-full bg-[#FDCDB7] flex flex-col justify-center items-center pb-10" ref={container}>
                 <div className='text-black flex justify-self-center self-center lg:text-6xl text-4xl mb-10 mt-10'>Projects</div>
                 
                 <div className="number-container">

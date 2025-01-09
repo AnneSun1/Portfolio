@@ -21,13 +21,12 @@ export default function About() {
     })
 
     return (
-        <div className="flex flex-row justify-evenly align-items flex-wrap-reverse">
+        <div className="flex flex-row justify-center align-items flex-wrap-reverse">
             <NavBar/>
             
-                <div className="portrait-container">
-                    {/* <p>♥</p> */}
-                    <img className="me" src='./images/portfolio-img.jpeg'></img>
-                </div>  
+            <div className="portrait-container">
+                <img className="me" src='./images/portfolio-img.jpeg'></img>
+            </div>  
                 
                 {/* <img className="cat" src="./images/cat-portfolio-img.jpg"></img> */}
             <div className="about-me-container">
