@@ -1,6 +1,7 @@
 import './projects.css';
 import gsap from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
 
 interface ProjectCardParams {
@@ -13,14 +14,26 @@ interface ProjectCardParams {
 }
 
 gsap.registerPlugin(TextPlugin);
-
+gsap.registerPlugin(ScrollTrigger);
 const projectCard = ({number, title, summary, description, link, image} : ProjectCardParams) => {
     
     useEffect(() => {
-        const tl = gsap.timeline({repeat: 0});
+        const tl = gsap.timeline({repeat: 0, paused: true});
         description.forEach((line, index) => (
             tl.add(gsap.timeline({repeat: 0}).to(`#${number}-line-${index}`, {duration: 1, text: line}))
         ))
+
+        gsap.timeline({
+            scrollTrigger: ({
+            trigger: `#project-${number}`,
+            // markers: true,
+            start: 'top 50%',
+            end: 'bottom 50%',
+            onEnter: () => {
+                tl.play();
+            },
+          })
+        })
 
         return () => {
             tl.kill(); 
@@ -28,7 +41,7 @@ const projectCard = ({number, title, summary, description, link, image} : Projec
     }, [])
     
     return (
-        <div className="project-card">
+        <div className="project-card" id={`project-${number}`}>
             <h1 className="mb-2">{title}</h1>
             <h2 className="mb-5">{summary}</h2>
             <div className='flex flex-row justify-center '>

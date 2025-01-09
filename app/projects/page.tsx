@@ -1,6 +1,6 @@
 "use client"
 import gsap from "gsap";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import './projects.css'
@@ -12,6 +12,11 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default function Projects() {
     const container = useRef(null);
+    const project1 = useRef(null);
+    const project2 = useRef(null);
+    const project3 = useRef(null);
+    const project4 = useRef(null);
+    const project5 = useRef(null);
 
     const wastelyDescription = ["♥ Tech Stack: Tensorflow, Python, React, Express, HTML, CSS, Javascript, Docker, AWS", 
         "♥ Catgeorize your waste into Organics vs Recycables using a deep learning model", 
@@ -20,13 +25,13 @@ export default function Projects() {
         "♥ Save, post and like side project ideas with videos and github repos provided", 
         "♥ Like, comment and upvote projects that you think are helpful and creative for learning"]
     const takeMeOutDescription = ["♥ Tech Stack: Python, Ren'py", 
-        "♥ A fully written visual novel game with sound effects, music and PLOTTWISTS!",
+        "♥ A fully written visual novel game with sound effects, music and PLOT TWISTS!",
         "♥ Interact with characters and see how your story ends"]
     const yelpCampDescription = ["♥ Tech Stack: React, Express, MongoDB, Redux, HTML, CSS, GSAP", 
         "♥ Coming Soon..."]
     const finaDescription = ["♥ Tech Stack: React, Javascript, React Native", 
         "♥ Coming Soon..."]
-        
+
     const moveTo = (id: string) =>{
         gsap.to(window, {
            duration: 1,
