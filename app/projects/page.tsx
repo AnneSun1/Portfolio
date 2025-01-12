@@ -27,6 +27,8 @@ export default function Projects() {
     const takeMeOutDescription = ["♥ Tech Stack: Python, Ren'py", 
         "♥ A fully written visual novel game with sound effects, music and PLOT TWISTS!",
         "♥ Interact with characters and see how your story ends"]
+    const SqwitsGameDescription = ["♥ Tech Stack: React, Flask, OpenCV, Framer Motion, YOLOv5, Databricks", 
+        "♥ Coming Soon..."]
     const yelpCampDescription = ["♥ Tech Stack: React, Express, MongoDB, Redux, HTML, CSS, GSAP", 
         "♥ Coming Soon..."]
     const finaDescription = ["♥ Tech Stack: React, Javascript, React Native", 
@@ -61,40 +63,40 @@ export default function Projects() {
             <div id="project1" className="bg-white flex flex-col justify-center items-center">
                <Card 
                 number="one"
-                title="Wastely"
-                summary="Find how to categorize your waste:"
-                description={wastelyDescription}
-                link="https://github.com/AnneSun1/wastely"
-                image="images/wastely.png"/>
+                title="SqWiTs Game"
+                summary="SheHacks 9: 3rd Place Overall, SheHacks 9: Best Use of Databricks Award"
+                description={SqwitsGameDescription}
+                link="https://github.com/AnneSun1/SqWiTs-game"
+                image="images/sqwits-game.png"/>
             </div>
 
             <div id="project2" className="bg-[#D5DDE8] flex flex-col justify-center items-center">
                 <Card 
                     number="two"
+                    title="Wastely"
+                    summary="Find how to categorize your waste:"
+                    description={wastelyDescription}
+                    link="https://github.com/AnneSun1/wastely"
+                    image="images/wastely.png"/>
+            </div>
+
+            <div id="project3" className="bg-[#FDCDB7] flex flex-col justify-center items-center">
+            <Card 
+                    number="three"
                     title="Estia"
                     summary="Find your next side project:"
                     description={estiaDescription}
                     link="https://github.com/estiaofficial/estia"
                     image="images/estia.png"/>
             </div>
-
-            <div id="project3" className="bg-[#FDCDB7] flex flex-col justify-center items-center">
+            <div id="project4" className="bg-white flex flex-col justify-center items-center">
                 <Card 
-                    number="three"
+                    number="four"
                     title="Take Me Out!"
                     summary="Date the 2D man of your dreams!:"
                     description={takeMeOutDescription}
                     link="https://github.com/AnneSun1/Take-Me-Out-Game"
                     image="images/take-me-out.png"/>
-            </div>
-            <div id="project4" className="bg-white flex flex-col justify-center items-center">
-                <Card 
-                    number="four"
-                    title="Nswer"
-                    summary=""
-                    description={yelpCampDescription}
-                    link="https://github.com/AnneSun1/YelpCamp-MERN"
-                    image="images/coming-soon.png"/>
             </div>
             <div id="project5" className="bg-[#D5DDE8] flex flex-col justify-center items-center">
                 <Card 
