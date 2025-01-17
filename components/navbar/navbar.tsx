@@ -9,7 +9,7 @@ export function NavBar() {
             <div className="m-4"><Link href="/">Home</Link></div>
             <div className="m-4"><Link href="/about">About Me</Link></div>
             <div className="m-4"><Link href="/projects">Projects</Link></div>
-            
+            <div className="m-4"><Link href="/experience">Experience</Link></div>
         </div>
     )
 }
